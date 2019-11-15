@@ -38,6 +38,5 @@ public class FrameText{
                 System.out.print("*");
             }
         }
-        System.out.println(longestString);
     }
 }
