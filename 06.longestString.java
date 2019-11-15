@@ -12,7 +12,7 @@ public class Main {
         int amount = input.nextInt();
 
 
-        System.out.println("Please enter "+amount+ " names:");
+        System.out.println("Please enter "+amount+ " Strings:");
 
         Scanner s = new Scanner(System.in);
         String[] array = new String[amount];
