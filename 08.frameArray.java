@@ -1,11 +1,14 @@
-package com.example.java;
+
 import java.util.*;
-public class FrameText{
-   public static void main(String[] args) {
-        Scanner Obj = new Scanner(System.in);
-        System.out.println("Please enter Space separated words to frame");
-        String input = Obj.nextLine();
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the list of Strings to frame: ");
+
+        String input = scanner.nextLine();
         String[] words = input.split(" ");
+
+        //Call the frame function
         frame(words);
     }
     public static void frame(String[] arr){
@@ -38,5 +41,6 @@ public class FrameText{
                 System.out.print("*");
             }
         }
+
     }
 }
