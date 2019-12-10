@@ -1,11 +1,7 @@
-package com.example.java;
-
-import java.util.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("Please enter the size of your Arrays: ");
 
         Scanner input = new Scanner(System.in);
@@ -29,13 +25,15 @@ public class Main {
             secondArray[i] = scanner2.nextLine();
         }
 
+        combine(firstArray, secondArray);
+    }
+
+    public static void combine(String[] firstArray, String[] secondArray) {
         //  Output
         for (int i = 0; i < firstArray.length; i++) {
             System.out.print(firstArray[i] + " "+ secondArray[i] + " ");
         }
-
-
     }
-
-
 }
+
+
