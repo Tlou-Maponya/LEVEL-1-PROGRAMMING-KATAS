@@ -1,11 +1,7 @@
-package com.example.java;
-
-import java.util.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("Please enter the amount of strings you wish to display: ");
 
         Scanner input = new Scanner(System.in);
@@ -17,10 +13,15 @@ public class Main {
         Scanner s = new Scanner(System.in);
         String[] array = new String[amount];
 
-
         for (int i = 0; i < array.length; i++) {
             array[i] = s.nextLine();
         }
+
+        longestString(array);
+    }
+
+    public static void longestString(String[] array) {
+
 
         String longestString = array[0];
         for(int x=1; x<array.length; x++)
@@ -37,9 +38,7 @@ public class Main {
                 System.out.println("Longest string is: " + array[y]);
             }
         }
-
-
     }
-
-
 }
+
+
